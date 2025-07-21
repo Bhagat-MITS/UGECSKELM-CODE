@@ -8,7 +8,7 @@ KERNEL_haberman.m: selecting parameters of UGECSKELM using 5-fold cross-validati
 
 UGECSKELM.m: implementation of UGECSKELM algorithm. Takes parameters l, λ and  σ and training data and test data, and provides accuracy obtained and running time.
  
- The code has been tested on Windows 10 with MATLAB R2018b.
+ The code has been tested on MATLAB R2018b software, an 11th Gen Intel(R) Core(TM) i7-11700 processor operating at 2.50GHz with 16.0 GB RAM, and a Windows-11 operating platform.
 
 This code is for non-commercial and academic use only. Please cite the following paper if you are using this code.
 
