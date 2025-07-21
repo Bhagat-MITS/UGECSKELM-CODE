@@ -5,21 +5,21 @@ AVG_TEST_TIME=0;
 MAX_AUC_soft=0;
 MAX_AUC_hard=0;
 MAX_F_MEASURE=0;
-  for lambda=-8:2:50 
+  for lambda=-18:2:50 
       
-      for lambda1=-8:2:20
+      for lambda1=-18:2:50
           
-      for bias=-8:2:20
+      for bias=-18:2:20
         lambda
         bias
       
          
       
-             [max_gmean1, max_tesova1,X1,Y1,AUC_soft1,AUC_hard1,F_measure1,training_time1, testing_time1]= KERNEL_ELM_regularized_LXL_radbas('ecoli-0-1-4-7_vs_5-6-5-1tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-1tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
-             [max_gmean2, max_tesova2,X2,Y2,AUC_soft2,AUC_hard2,F_measure2,training_time2, testing_time2]= KERNEL_ELM_regularized_LXL_radbas('ecoli-0-1-4-7_vs_5-6-5-2tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-2tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
-             [max_gmean3, max_tesova3,X3,Y3,AUC_soft3,AUC_hard3,F_measure3,training_time3, testing_time3]= KERNEL_ELM_regularized_LXL_radbas('ecoli-0-1-4-7_vs_5-6-5-3tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-3tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
-             [max_gmean4, max_tesova4,X4,Y4,AUC_soft4,AUC_hard4,F_measure4,training_time4, testing_time4]= KERNEL_ELM_regularized_LXL_radbas('ecoli-0-1-4-7_vs_5-6-5-4tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-4tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
-             [max_gmean5, max_tesova5,X5,Y5,AUC_soft5,AUC_hard5,F_measure5,training_time5, testing_time5]= KERNEL_ELM_regularized_LXL_radbas('ecoli-0-1-4-7_vs_5-6-5-5tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-5tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
+             [max_gmean1, max_tesova1,X1,Y1,AUC_soft1,AUC_hard1,F_measure1,training_time1, testing_time1]= UGECSKELM('ecoli-0-1-4-7_vs_5-6-5-1tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-1tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
+             [max_gmean2, max_tesova2,X2,Y2,AUC_soft2,AUC_hard2,F_measure2,training_time2, testing_time2]= UGECSKELM('ecoli-0-1-4-7_vs_5-6-5-2tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-2tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
+             [max_gmean3, max_tesova3,X3,Y3,AUC_soft3,AUC_hard3,F_measure3,training_time3, testing_time3]= UGECSKELM('ecoli-0-1-4-7_vs_5-6-5-3tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-3tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
+             [max_gmean4, max_tesova4,X4,Y4,AUC_soft4,AUC_hard4,F_measure4,training_time4, testing_time4]= UGECSKELM('ecoli-0-1-4-7_vs_5-6-5-4tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-4tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
+             [max_gmean5, max_tesova5,X5,Y5,AUC_soft5,AUC_hard5,F_measure5,training_time5, testing_time5]= UGECSKELM('ecoli-0-1-4-7_vs_5-6-5-5tra_MM.dat','ecoli-0-1-4-7_vs_5-6-5-5tst_MM.dat', 1,'RBF_kernel',power(2,lambda),power(2,lambda1),power(2,bias));
 
              AMEAN_OF_MAX_GMEAN= (max_gmean1 + max_gmean2 + max_gmean3 + max_gmean4 + max_gmean5)/5;
            AMEAN_OF_MAX_TESOVA= (max_tesova1 + max_tesova2 + max_tesova3 + max_tesova4 + max_tesova5)/5;
