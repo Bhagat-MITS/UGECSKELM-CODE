@@ -2,7 +2,9 @@ This is implementation of the paper: Bhagat S. Raghuwanshi Universum graph-embed
 
 Description of files:
 
-pima.m: selecting parameters of UGECSKELM using 5-fold cross-validation. One can select parameters l, λ and  σ to be used in grid-search method.
+Similar setting for all use datasets (keel dataset repository)
+
+KERNEL_haberman.m: selecting parameters of UGECSKELM using 5-fold cross-validation. One can select parameters l, λ and  σ to be used in grid-search method.
 
 UGECSKELM.m: implementation of UGECSKELM algorithm. Takes parameters l, λ and  σ and training data and test data, and provides accuracy obtained and running time.
  
