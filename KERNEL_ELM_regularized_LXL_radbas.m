@@ -1,4 +1,4 @@
-function [max_test_gmean,max_test_ova,X,Y,AUC_soft,AUC_hard,F_measure,TrainingTime, TestingTime] = KERNEL_ELM_regularized_LXL_radbas(TrainingData_File, TestingData_File, Elm_Type, Kernel_type,C,C1,Kernel_para)
+function [max_test_gmean,max_test_ova,X,Y,AUC_soft,AUC_hard,F_measure,TrainingTime, TestingTime] = UGECSKELM(TrainingData_File, TestingData_File, Elm_Type, Kernel_type,C,C1,Kernel_para)
 
 %%%%%%%%%%% Macro definition
 REGRESSION=0;
