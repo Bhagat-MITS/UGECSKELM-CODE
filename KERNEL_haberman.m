@@ -5,11 +5,11 @@ AVG_TEST_TIME=0;
 MAX_AUC_soft=0;
 MAX_AUC_hard=0;
 MAX_F_MEASURE=0;
-  for lambda=0:2:50
+  for lambda=-18:2:50
       
-      for lambda1=0:2:20
+      for lambda1=-18:2:50
           
-      for bias=0:2:20
+      for bias=-18:2:20
         lambda
         bias
       
