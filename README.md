@@ -12,7 +12,8 @@ UGECSKELM.m: implementation of UGECSKELM algorithm. Takes parameters l, λ and  
 
 This code is for non-commercial and academic use only. Please cite the following paper if you are using this code.
 
-Reference: Bhagat S. Raghuwanshi Universum graph-embedded class-specific kernelized extreme learning machine for handling class imbalance
+Reference citation: Raghuwanshi, B. S., & Shukla, S. (2021b). Minimum variance-embedded kernelized extension of extreme learning machine for imbalance learning. Pattern
+Recognition, 119 , 108069
 
 For further details regarding working of algorithm kindly send mail.
 
